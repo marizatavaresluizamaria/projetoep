@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOBRE NÓS</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="shortcut icon" href="image/logosp.png"  type="image/x-icon">
+
+    <style>
+
+
+body{
+        background-color: #FEFCF3;
+      }
+      .rodape{
+            background-color: #2B3A55;
+            font-size: 90px;
+            font-family: Copperplate Gothic Light;
+            text-align: center;
+            height: 450px;
+            line-height: 450px;
+            color: #BF852E;
+            width: 100%;
+            
+        }
+        a{
+          color: #FEFCF3;
+          font-family: Copperplate Gothic Light;
+        }
+        a:hover{
+          color: #BF852E;
+          font-family: Copperplate Gothic Light;
+        }
+        .dropdown-menu{
+          background-color: #2B3A55;
+        }
+        .dropdown-item{
+          color: #FEFCF3;
+        }
+        .botao{
+          background-color: #DBA39A;
+          font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .botao:hover{
+          background-color: #DBA39A;
+          color: #FEFCF3;
+          font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .row{
+         
+        }
+        .fund{
+          background-color: #2B3A55;
+        }
+        h1{
+          color: #BF852E;
+          font-family: Copperplate Gothic Light;
+          text-align: center;
+          margin-top: 150px;
+          margin-bottom: 100px;
+          margin-right: 3px;
+        }
+
+        
+
+  
+        
+
+        
+.main-timeline {
+    position: relative
+}
+
+.main-timeline:before {
+    content: "";
+    display: block;
+    width: 2px;
+    height: 100%;
+    background: #BF852E;
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0
+}
+
+.main-timeline .timeline {
+    margin-bottom: 40px;
+    position: relative
+}
+
+.main-timeline .timeline:after {
+    content: "";
+    display: block;
+    clear: both
+}
+
+.main-timeline .icon {
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0
+}
+
+.main-timeline .icon:before,
+.main-timeline .icon:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.33s ease-out 0s
+}
+
+.main-timeline .icon:before {
+    background: #BF852E;
+
+    left: -3px
+}
+
+.main-timeline .icon:after {
+    border: 2px solid #BF852E;
+    left: 3px
+}
+
+.main-timeline .timeline:hover .icon:before {
+    left: 3px
+}
+
+.main-timeline .timeline:hover .icon:after {
+    left: -3px
+}
+
+.main-timeline .date-content {
+    width: 50%;
+    float: left;
+    margin-top: 22px;
+    position: relative
+}
+
+.main-timeline .date-content:before {
+    content: "";
+    width: 36.5%;
+    height: 2px;
+    background: #BF852E;
+    margin: auto 0;
+    position: absolute;
+    top: 0;
+    right: 10px;
+    bottom: 0
+}
+
+.main-timeline .date-outer {
+    width: 125px;
+    height: 125px;
+    font-size: 16px;
+    text-align: center;
+    margin: auto;
+    z-index: 1
+}
+
+.main-timeline .date-outer:before,
+.main-timeline .date-outer:after {
+    content: "";
+    width: 125px;
+    height: 125px;
+    margin: 0 auto;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: all 0.33s ease-out 0s
+}
+
+.main-timeline .date-outer:before {
+    background: #FEFCF3;
+    border: 2px solid #BF852E;
+    left: -6px
+}
+
+.main-timeline .date-outer:after {
+    border: 2px solid #BF852E;
+    left: 6px
+}
+
+.main-timeline .timeline:hover .date-outer:before {
+    left: 6px
+}
+
+.main-timeline .timeline:hover .date-outer:after {
+    left: -6px
+}
+
+.main-timeline .date {
+    width: 100%;
+    margin: auto;
+    position: absolute;
+    top: 27%;
+    left: 0
+}
+
+.main-timeline .month {
+    font-size: 18px;
+    font-weight: 700
+}
+
+.main-timeline .year {
+    display: block;
+    font-size: 30px;
+    font-weight: 700;
+    color: #232323;
+    line-height: 36px
+}
+
+.main-timeline .timeline-content {
+    width: 50%;
+    padding: 20px 0 20px 50px;
+    float: right
+}
+
+.main-timeline .title {
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 24px;
+    margin: 0 0 15px 0
+}
+
+.main-timeline .description {
+    margin-bottom: 0
+}
+
+.main-timeline .timeline:nth-child(2n) .date-content {
+    float: right
+}
+
+.main-timeline .timeline:nth-child(2n) .date-content:before {
+    left: 10px
+}
+
+.main-timeline .timeline:nth-child(2n) .timeline-content {
+    padding: 20px 50px 20px 0;
+    text-align: right
+}
+
+@media only screen and (max-width: 991px) {
+    .main-timeline .date-content {
+        margin-top: 35px
+    }
+    .main-timeline .date-content:before {
+        width: 22.5%
+    }
+    .main-timeline .timeline-content {
+        padding: 10px 0 10px 30px
+    }
+    .main-timeline .title {
+        font-size: 17px
+    }
+    .main-timeline .timeline:nth-child(2n) .timeline-content {
+        padding: 10px 30px 10px 0
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .main-timeline:before {
+        margin: 0;
+        left: 7px
+    }
+    .main-timeline .timeline {
+        margin-bottom: 20px
+    }
+    .main-timeline .timeline:last-child {
+        margin-bottom: 0
+    }
+    .main-timeline .icon {
+        margin: auto 0
+    }
+    .main-timeline .date-content {
+        width: 95%;
+        float: right;
+        margin-top: 0
+    }
+    .main-timeline .date-content:before {
+        display: none
+    }
+    .main-timeline .date-outer {
+        width: 110px;
+        height: 110px
+    }
+    .main-timeline .date-outer:before,
+    .main-timeline .date-outer:after {
+        width: 110px;
+        height: 110px
+    }
+    .main-timeline .date {
+        top: 30%
+    }
+    .main-timeline .year {
+        font-size: 24px
+    }
+    .main-timeline .timeline-content,
+    .main-timeline .timeline:nth-child(2n) .timeline-content {
+        width: 95%;
+        text-align: center;
+        padding: 10px 0
+    }
+    .main-timeline .title {
+        margin-bottom: 10px
+    }
+}
+    </style>
+</head>
+<body>
+    
+    <!--Barra de navegação-->
+    <nav class="navbar navbar-expand-lg fund "> 
+        <!-- add image -->
+<nav class="navbar navbar-light navbar-expand-lg">
+    <a class="navbar-brand" href="#">
+      <img src="image/logosp.png" width="50" height="50" alt="">
+    </a>
+  </nav>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="paginainicial.html">Página inicial |<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="sobrenós2.html">Sobre nós |</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="faleconosco.html">Fale conosco |<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Loja 
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="Cestas Prontas.html">Cestas Prontas</a>
+                <a class="dropdown-item" href="Pelucias e Polaroides.html">Pelúcias e Polaroides</a>
+                  <a class="dropdown-item" href="Canecas Personalizadas.html">Canecas Personalizadas</a>
+              </div>
+            </li>
+          
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Pesquise item aqui..." aria-label="Search">
+            <button class="btn botao my-2 my-sm-0" type="submit">Pesquisar</button>
+          </form>
+        </div>
+      </nav>
+
+    <div class="container">
+        <div class="main-timeline">
+            
+        <h1>Nossa história...</h1>
+        <p></p><br><br>
+                                <!-- start experience section-->
+                                <div class="timeline">
+                                    <div class="icon"></div>
+                                    <div class="date-content">
+                                        <div class="date-outer">
+                                            <span class="date">
+                                                    <span class="month">23/01</span>
+                                            <span class="year">2023</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-content">
+                                        <h5 class="title">  Demos início ao curso técnico de multimídias do SENAI, e começamos aprendendo um pouco sobre as bases necessárias para um empreendimento de sucesso.  </h5>
+                                        <p class="description">
+                                            Escolha dos grupos.
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- end experience section-->
+        
+                                <!-- start experience section-->
+                                <div class="timeline">
+                                    <div class="icon"></div>
+                                    <div class="date-content">
+                                        <div class="date-outer">
+                                            <span class="date">
+                                                    <span class="month">30/01</span>
+                                            <span class="year">2023</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-content">
+                                        <h5 class="title">Sprint planning I:</h5>
+                                        <p class="description">
+                                            Duas semanas depois o grupo com as integrantes: 
+                                            <p>Julia Almeida de Lacerda;</p>
+                                            <p> Karoline Torquato Cunha;</p>
+                                            <p>Lauren Zareski de Oliveira;</p>
+                                            <p>Maria Gabriela Motta de Freitas;</p> 
+                                            <p>Maria Luiza Tavares Marisa;</p> 
+                                            <p>Milena da Silva Souza decidiram criar a Organização Ela Poeta. Com base na idéia de Lauren, o grupo começa a avaliar a idéia de apresentar o projeto.
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- end experience section-->
+        
+                                <!-- start experience section-->
+                                <div class="timeline">
+                                    <div class="icon"></div>
+                                    <div class="date-content">
+                                        <div class="date-outer">
+                                            <span class="date">
+                                                    <span class="month">14/03</span>
+                                            <span class="year">2023</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-content">
+                                        <h5 class="title">Sprint Review I</h5>
+                                        <p class="description">
+                                            <p> · Briefing </p>
+                                          <p>· Proto-persona</p>
+                                          <p>· Proto-jornada </p>
+                                          <p>· SiteMap </p>
+                                          <p>· Wireframe de baixa fidelidade – site. </p>
+                                          <p>· Estrutura do site em HTML </p>
+                                         <p> · Identidade Visual </p>
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- end experience section-->
+        
+                                <!-- start experience section-->
+                                <div class="timeline">
+                                    <div class="icon"></div>
+                                    <div class="date-content">
+                                        <div class="date-outer">
+                                            <span class="date">
+                                                    <span class="month">20/03</span>
+                                            <span class="year">2023</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-content">
+                                        <h5 class="title">Sprint Planning 2</h5>
+                                        <p class="description">
+                                            <p> Com base nos erros apontados, nossa responsabilidade foi repensar em alguns pontos do projeto.</p>
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- end experience section-->
+        
+                            
+        
+
+
+
+
+
+
+        <!-- start experience section-->
+        <div class="timeline">
+            <div class="icon"></div>
+            <div class="date-content">
+                <div class="date-outer">
+                    <span class="date">
+                            <span class="month">16/05</span>
+                    <span class="year">2023</span>
+                    </span>
+                </div>
+            </div>
+            <div class="timeline-content">
+                <h5 class="title"> Sprint Review 2 </h5>
+                <p class="description">
+                    <p>Protótipos dos sites e aplicativos.</p>
+                    <p>Wireframe de alta fidelidade – site.</p>
+                    <p>Site em HTML, CSS</p>
+                    <p>Logotipo</p>
+                    <p>Banners promocionais</p>
+                </p>
+            </div>
+        </div>
+        <!-- end experience section-->
+
+        <!-- start experience section-->
+        <div class="timeline">
+            <div class="icon"></div>
+            <div class="date-content">
+                <div class="date-outer">
+                    <span class="date">
+                            <span class="month">23/05</span>
+                    <span class="year">2023</span>
+                    </span>
+                </div>
+            </div>
+            <div class="timeline-content">
+                <h5 class="title">Sprint Planning 3</h5>
+                <p class="description">
+                    Nosso objetivo nessa etapa foi ampliar ainda mais os horizontes da empresa.
+                    <p>· Site em HTML, CSS, JS</p>
+                    <p>- ter componentes do framework bootstrap 4.1;</p>
+                    <p>- ser responsivo;</p>
+                    <p>- deve conter manipulação de DOM;</p>
+                    <p>- uso de funções;</p>
+                    <p>- apresentar fundamento da lógica de programação: condicionais e laço de repetição;</p>
+                    <p>- hospedado em site servidor (online).</p>
+                </p>
+            </div>
+        </div>
+        <!-- end experience section-->
+
+        <!-- start experience section-->
+        <div class="timeline">
+            <div class="icon"></div>
+            <div class="date-content">
+                <div class="date-outer">
+                    <span class="date">
+                            <span class="month">29/08</span>
+                    <span class="year">2023</span>
+                    </span>
+                </div>
+            </div>
+            <div class="timeline-content">
+                <h5 class="title">Sprint Review 3</h5>
+                <p class="description">
+                    <p>Aguardando os feedbacks. </p>
+                 
+            </div>
+        </div>
+        
+    </div>
+
+    </div>
+    <div class="rodape">
+        Ela Poeta
+            <img src="image/insta_p.png" width="60" height="60" alt="">
+            <img src="image/whats_p.png" width="50" height="50" alt="">
+            <img src="image/face_p.png" width="50" height="50" alt="">
+      </div>
+</body>
+
+
+<!-- Importando o jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<!-- Importando o js do bootstrap -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+</html>
